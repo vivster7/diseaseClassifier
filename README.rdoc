@@ -1,0 +1,40 @@
+== README
+
+*Running
+To initialize, run:
+Gene.initFromExcel('01361Table1.xlsx') #with 01361Table1.xlsx in the apps root dir
+
+Interaction.initInteractionDB()
+
+GeneRelation.populateGeneRelation()
+
+Done with initializing databse. To filter for new genes:
+Gene.findNewGenes(gene_class, cutoff)
+ex. Gene.findNewGenes(:bone, 2)
+ex. Gene.findNewGenes(:cancer, 4)
+
+There are 20 gene_classes. Cutoff should usually be <10.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
