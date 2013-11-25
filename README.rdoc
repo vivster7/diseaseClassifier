@@ -17,8 +17,9 @@ Run in cmd line:
 
 Done with initializing databse. To filter for new genes:
       Gene.findNewGenes(gene_class, cutoff)
-ex. Gene.findNewGenes(:bone, 2)
-ex. Gene.findNewGenes(:cancer, 4)
+examples: 
+      Gene.findNewGenes(:bone, 2)
+      Gene.findNewGenes(:cancer, 4)
 
 There are 20 gene_classes. Cutoff should usually be <10.
 
