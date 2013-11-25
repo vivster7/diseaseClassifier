@@ -1,15 +1,22 @@
 == README
 
-*Running
-To initialize, run:
-Gene.initFromExcel('01361Table1.xlsx') #with 01361Table1.xlsx in the apps root dir
+=Initialization
+Run in cmd line:
 
-Interaction.initInteractionDB()
+      bundle install
 
-GeneRelation.populateGeneRelation()
+      rake db:create
+
+      rake db:migrate
+
+      Gene.initFromExcel('01361Table1.xlsx') #with 01361Table1.xlsx in the apps root dir
+
+      Interaction.initInteractionDB()
+
+      GeneRelation.populateGeneRelation()
 
 Done with initializing databse. To filter for new genes:
-Gene.findNewGenes(gene_class, cutoff)
+      Gene.findNewGenes(gene_class, cutoff)
 ex. Gene.findNewGenes(:bone, 2)
 ex. Gene.findNewGenes(:cancer, 4)
 
